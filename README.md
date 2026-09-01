@@ -1,8 +1,11 @@
 # 🤖 ShoppingAgent 🛒
 
-
+https://github.com/user-attachments/assets/871ce5fc-78cb-44d0-aa0a-f31cd76b0a49
 
 > 🎥 Watch **ShoppingAgent** in action!
+
+> [!IMPORTANT]
+> This project is intended for learning, experimentation, and demonstration. If you remix or reuse it, review the generated code, environment variables, Gemini API configuration, security controls, and AI-generated responses before deploying it to production.
 
 ---
 
@@ -241,31 +244,43 @@ ShoppingAgent/
 
 ### ShoppingAgent Interface
 
-
+<img width="1366" height="716" alt="ShoppingAgent" src="https://github.com/user-attachments/assets/518f3760-7743-47e7-8c85-511ab5b33349" />
 
 ### Party Planning
 
-
+<img width="1366" height="676" alt="Party Planning" src="https://github.com/user-attachments/assets/10c74377-161a-4f5b-8a26-1d49d7ba34f7" />
 
 ### Generated Shopping Plan
 
-
+<img width="1366" height="677" alt="Shopping Plan-0" src="https://github.com/user-attachments/assets/6010e1de-8347-4dbf-b477-dee7de5f6ae9" />
+<img width="1366" height="676" alt="Shopping Plan-1" src="https://github.com/user-attachments/assets/61081db7-c7b3-42c6-af32-20d62b86443b" />
+<img width="1366" height="673" alt="Shopping Plan-2" src="https://github.com/user-attachments/assets/3e6986ff-a30c-4493-b8e5-c944673bb80d" />
+<img width="1366" height="674" alt="Shopping Plan-3" src="https://github.com/user-attachments/assets/6d5afdf2-5b0f-4903-b6e2-0049842e456b" />
 
 ### Shopping List Refinement
 
-
+<img width="1365" height="670" alt="Budget-1" src="https://github.com/user-attachments/assets/02a02f0a-4bfb-4eac-90f1-49ae2cdf1e24" />
+<img width="1366" height="673" alt="Budget-2" src="https://github.com/user-attachments/assets/23137314-aaa2-45f4-a041-f17f5b324c3e" />
 
 ### Budget Optimization
 
-
+<img width="1366" height="673" alt="BOP" src="https://github.com/user-attachments/assets/f2fd36b7-d568-4ee6-9678-0638fabf894e" />
 
 ### Item Substitution
 
-
+<img width="1366" height="674" alt="Subs-1" src="https://github.com/user-attachments/assets/f43ab563-161e-4605-82bf-c87109d1afc8" />
 
 ### AI Agent Conversation
 
+<img width="1366" height="672" alt="Agent-1" src="https://github.com/user-attachments/assets/86cdff80-9589-4793-9e6c-3cdca04faaeb" />
+<img width="1366" height="671" alt="Agent-2" src="https://github.com/user-attachments/assets/c8734409-4ec0-42a4-b47a-3c33d3d7a42b" />
 
+### Checkout
+
+<img width="1366" height="677" alt="Checkout-1" src="https://github.com/user-attachments/assets/abe8de67-40b2-4ae1-9f60-249ad3fb13e1" />
+<img width="1366" height="677" alt="Checkout-2" src="https://github.com/user-attachments/assets/8665a259-388c-4cc5-9adb-cf8e1c2b9ba4" />
+<img width="1366" height="673" alt="Checkout-3" src="https://github.com/user-attachments/assets/e6b404b8-e5c6-4a73-9533-6b6dac35031b" />
+<img width="1366" height="676" alt="Checkout-4" src="https://github.com/user-attachments/assets/f4be54f0-78ba-4d5e-bae4-5acba82c5042" />
 
 ---
 
@@ -301,9 +316,6 @@ This project was initially developed using the Google Skills lab:
 The lab provided the foundation for creating an AI-powered shopping agent and exploring the development workflow using Google AI Studio.
 
 The project was subsequently modified and enhanced beyond the initial lab implementation.
-
-> [!NOTE]
-> The Google Skills lab served as the starting point for the project. The current ShoppingAgent implementation includes additional changes, refinements, and experimentation beyond the original lab workflow.
 
 ---
 
