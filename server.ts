@@ -684,17 +684,19 @@ Your role:
 3. If the user asks to cut costs (e.g. "Reduce my budget by $40"), give specific item substitutions, bulk buying tips, or items to trim.
 4. If the user asks about portion math, ice formulas, bar ratios, or cooking timelines, give clear mathematical explanations.
 5. Always keep the tone upbeat, professional, practical, and party-ready.
+`;
 
-Current Party Context:
+        const partyContext = `Current Party Context:
 Title: ${currentPlan?.title || 'Party'}
 Guests: ${currentPlan?.guestCount?.total || 10} (${currentPlan?.guestCount?.adults || 10} adults, ${currentPlan?.guestCount?.kids || 0} kids)
 Drinkers: ${currentPlan?.guestCount?.drinkers || 8}
 Budget: $${currentPlan?.targetBudget || 200}
 Item count: ${currentPlan?.items?.length || 0}
-Dietary: ${(currentPlan?.dietaryRestrictions || []).join(', ') || 'None'}
-`;
+Dietary: ${(currentPlan?.dietaryRestrictions || []).join(', ') || 'None'}`;
 
-        const prompt = `Chat History:
+        const prompt = `${partyContext}
+
+Chat History:
 ${(chatHistory || []).map((c: any) => `${(c?.sender || 'user').toUpperCase()}: ${c?.text || ''}`).join('\n')}
 
 USER: ${message}
