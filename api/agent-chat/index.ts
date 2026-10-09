@@ -34,6 +34,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
   } catch (error: any) {
     console.error("Chat Serverless execution error:", error);
-    return res.status(500).json({ error: error.message || "Internal server error during agent conversation." });
+    
+    // Check if the error came from Google's high demand / rate limits
+    if (error.message && (error.message.includes("503") || error.message.includes("high demand"))) {
+      return res.status(503).json({ 
+        error: "The AI agent is currently experiencing high volume. Please click the button to try again in a moment!" 
+      });
+    }
+    
+    // Standard fallback fallback message
+    return res.status(500).json({ 
+      error: "The shopping agent encountered an unexpected issue. Please try sending your message again." 
+    });
   }
 }
