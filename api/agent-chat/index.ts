@@ -21,7 +21,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     Active Plan Context: ${JSON.stringify(currentPlan || {})}`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.8-flash',
       contents: [...(chatHistory || []).map((m: any) => m.text), message],
       config: {
         systemInstruction: systemInstruction
