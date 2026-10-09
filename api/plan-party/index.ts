@@ -82,6 +82,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(200).json(JSON.parse(dataText));
   } catch (error: any) {
     console.error("Serverless execution error:", error);
-    return res.status(500).json({ error: error.message || "Internal server error during plan generation." });
+    
+    // Check if the error came from Google's high demand / temporary rate limits
+    if (error.message && (error.message.includes("503") || error.message.includes("high demand"))) {
+      return res.status(503).json({ 
+        error: "The party planner is experiencing heavy volume right now. Please try clicking the generation button again in a few seconds!" 
+      });
+    }
+    
+    // Standard serverless function fallback
+    return res.status(500).json({ 
+      error: "The agent encountered an unexpected issue while assembling your shopping plan. Please try creating it again." 
+    });
   }
 }
