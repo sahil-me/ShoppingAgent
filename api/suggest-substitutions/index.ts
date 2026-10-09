@@ -50,6 +50,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(200).json(JSON.parse(response.text || "{}"));
   } catch (error: any) {
     console.error("Substitutions error:", error);
-    return res.status(500).json({ error: error.message || "Internal server error." });
+    
+    // Check if the error came from Google's high demand / temporary rate limits
+    if (error.message && (error.message.includes("503") || error.message.includes("high demand"))) {
+      return res.status(503).json({ 
+        error: "The agent is handling a lot of substitution requests right now. Please try looking for alternatives again in a few moments!" 
+      });
+    }
+    
+    // Standard serverless function fallback
+    return res.status(500).json({ 
+      error: "The agent encountered an unexpected issue finding alternative items. Please try again." 
+    });
   }
 }
