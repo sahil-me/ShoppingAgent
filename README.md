@@ -12,6 +12,7 @@ https://github.com/user-attachments/assets/871ce5fc-78cb-44d0-aa0a-f31cd76b0a49
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Remix on Google AI Studio](#remix-on-google-ai-studio)
 - [Architecture Diagram](#architecture-diagram)
 - [Project Structure](#project-structure)
 - [Features](#features)
@@ -46,6 +47,23 @@ The application is designed to help users:
 - Optimize shopping choices based on user requirements.
 
 The project was initially created as part of the **Create a Shopping Agent with Google AI Studio** Google Skills lab and was subsequently enhanced with additional functionality, refinements, and experimentation.
+
+---
+
+## Remix on Google AI Studio
+
+### Want to explore or customize **ShoppingAgent**? 
+
+Open the project in Google AI Studio to experiment with the app, modify its functionality, and build on the existing implementation.
+
+<p align="left">
+  <a href="https://ai.studio/apps/f8032d7b-f60a-4181-8188-7efa9263e223?fullscreenApplet=true">
+    <img src="https://img.shields.io/badge/AI%20Studio-Shopping%20Agent-4285F4?style=for-the-badge&labelColor=grey&logo=google&logoColor=white" alt="Google AI Studio | Shopping Agent" />
+  </a> 
+</p>
+
+> [!NOTE]
+> Remixing creates an opportunity to experiment with the project. Review the generated code, API configuration, environment variables, and security controls before deploying your own version.
 
 ---
 
