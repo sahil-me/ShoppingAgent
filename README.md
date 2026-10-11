@@ -1,8 +1,8 @@
-# 🤖 ShoppingAgent 🛒
+# 🤖 Shopping Agent 🛒
 
 https://github.com/user-attachments/assets/871ce5fc-78cb-44d0-aa0a-f31cd76b0a49
 
-> 🎥 Watch **ShoppingAgent** in action!
+> 🎥 Watch **Shopping Agent** in action!
 
 > [!IMPORTANT]
 > This project is intended for learning, experimentation, and demonstration. If you remix or reuse it, review the generated code, environment variables, Gemini API configuration, security controls, and AI-generated responses before deploying it to production.
@@ -32,7 +32,7 @@ https://github.com/user-attachments/assets/871ce5fc-78cb-44d0-aa0a-f31cd76b0a49
 
 ## Introduction
 
-**ShoppingAgent** is an AI-powered Party Planner Shopping Agent that helps users turn event-planning requirements into a curated and budget-conscious shopping plan.
+**Shopping Agent** is an AI-powered Party Planner Shopping Agent that helps users turn event-planning requirements into a curated and budget-conscious shopping plan.
 
 Instead of manually planning items, quantities, and shopping requirements for a party or event, users can interact with the AI agent using natural language and receive recommendations tailored to their event.
 
@@ -52,7 +52,7 @@ The project was initially created as part of the **Create a Shopping Agent with 
 
 ## Remix on Google AI Studio
 
-### Want to explore or customize **ShoppingAgent**? 
+### Want to explore or customize **Shopping Agent**? 
 
 Open the project in Google AI Studio to experiment with the app, modify its functionality, and build on the existing implementation.
 
@@ -69,14 +69,14 @@ Open the project in Google AI Studio to experiment with the app, modify its func
 
 ## Architecture Diagram
 
-The following diagram illustrates the high-level architecture of **ShoppingAgent**, including the user's browser, the ShoppingAgent application, the Express backend, Gemini, and the Google AI Studio development environment.
+The following diagram illustrates the high-level architecture of **Shopping Agent**, including the user's browser, the Shopping Agent application, the Express backend, Gemini, and the Google AI Studio development environment.
 
 <img width="286" height="874" alt="Architecture Diagram drawio" src="https://github.com/user-attachments/assets/c116e345-f79c-46ee-82d3-65eb28b009aa" />
 
 ### Architecture Overview
 
 1. **User Browser**
-   - Provides the web interface for interacting with ShoppingAgent.
+   - Provides the web interface for interacting with Shopping Agent.
    - Allows users to describe their party or shopping requirements.
    - Displays generated shopping plans, recommendations, and agent responses.
 
@@ -108,6 +108,16 @@ The following diagram illustrates the high-level architecture of **ShoppingAgent
 ```text
 ShoppingAgent/
 │
+├── api/
+│   ├── agent-chat/
+│   │   └── index.ts
+│   ├── plan-party/
+│   │   └── index.ts
+│   ├── price-compare-optimize/
+│   │   └── index.ts
+│   └── suggest-substitutions/
+│       └── index.ts
+│
 ├── src/
 │   ├── components/
 │   │   └── ...
@@ -130,13 +140,12 @@ ShoppingAgent/
 ├── index.html
 ├── metadata.json
 ├── package.json
-├── server.ts
 ├── tsconfig.json
 └── vite.config.ts
 ```
 
 > [!NOTE]
-> The project structure may evolve as new features and improvements are added.
+> The project structure highlights the main directories and files. Some component files are omitted for brevity.
 
 ---
 
@@ -182,11 +191,11 @@ ShoppingAgent/
 
 ## Application Workflow
 
-**ShoppingAgent** follows a conversational AI workflow for transforming party-planning requirements into a shopping plan.
+**Shopping Agent** follows a conversational AI workflow for transforming party-planning requirements into a shopping plan.
 
 1️⃣ **User Request**
 
-   - The user opens ShoppingAgent and describes the event or party they are planning.
+   - The user opens Shopping Agent and describes the event or party they are planning.
    - Example:
 
      ```bash
@@ -260,9 +269,9 @@ ShoppingAgent/
 
 ## Screenshots
 
-### ShoppingAgent Interface
+### Shopping Agent Interface
 
-<img width="1366" height="716" alt="ShoppingAgent" src="https://github.com/user-attachments/assets/518f3760-7743-47e7-8c85-511ab5b33349" />
+<img width="1366" height="716" alt="Shopping Agent" src="https://github.com/user-attachments/assets/518f3760-7743-47e7-8c85-511ab5b33349" />
 
 ### Party Planning
 
@@ -304,7 +313,7 @@ ShoppingAgent/
 
 ## AI-Assisted Development
 
-**ShoppingAgent** was developed with the assistance of AI tools during the development process.
+**Shopping Agent** was developed with the assistance of AI tools during the development process.
 
 AI assistance was used to support areas such as:
 - AI agent development.
@@ -339,7 +348,7 @@ The project was subsequently modified and enhanced beyond the initial lab implem
 
 ## Future Enhancements
 
-The following improvements could be considered in future iterations of **ShoppingAgent**:
+The following improvements could be considered in future iterations of **Shopping Agent**:
 
 - **Expanded Shopping Sources:** Support additional shopping sources and retailers.
 - **Real-Time Pricing:** Integrate reliable real-time product pricing.
@@ -373,7 +382,7 @@ The following improvements could be considered in future iterations of **Shoppin
 
 ## Disclaimer
 
-**ShoppingAgent** is an AI-powered application developed for learning, experimentation, and demonstration purposes.
+**Shopping Agent** is an AI-powered application developed for learning, experimentation, and demonstration purposes.
 
 The project uses third-party services including **Google AI Studio**, **Gemini**, and other technologies and services used by the application. Their availability, functionality, usage limits, pricing, and applicable policies are subject to the respective providers' terms and documentation.
 
@@ -405,5 +414,5 @@ See the [**LICENSE**](./LICENSE) file for details.
 
 [**Sahil Sharma**](https://github.com/sahil-me)
 
-Thank you for exploring **ShoppingAgent**. If you found the project useful, consider giving the repository a ⭐ to show your support.
+Thank you for exploring **Shopping Agent**. If you found the project useful, consider giving the repository a ⭐ to show your support.
 
